@@ -11,11 +11,11 @@
  *******************************************************************************/
 package org.eclipse.freemarker.internal.core.documentModel.dom;
 
-import org.eclipse.dltk.core.IModelElement;
+//import org.eclipse.dltk.core.IModelElement;
 
 public interface IImplForFM {
 
-	public void setModelElement(IModelElement modelElement);
+	//public void setModelElement(IModelElement modelElement);
 
-	public IModelElement getModelElement();
+	//public IModelElement getModelElement();
 }

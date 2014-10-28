@@ -13,7 +13,6 @@ package org.eclipse.freemarker.internal.core.documentModel.dom;
 
 import org.eclipse.core.runtime.IAdaptable;
 import org.eclipse.core.runtime.Platform;
-import org.eclipse.dltk.core.IModelElement;
 import org.eclipse.freemarker.internal.core.documentModel.parser.FMRegionContext;
 import org.eclipse.wst.xml.core.internal.document.TextImpl;
 import org.w3c.dom.Document;
@@ -25,7 +24,7 @@ import org.w3c.dom.Document;
  */
 public class TextImplForFM extends TextImpl implements IAdaptable, IImplForFM {
 
-	private IModelElement modelElement;
+	//private IModelElement modelElement;
 
 	protected TextImplForFM() {
 		super();
@@ -49,11 +48,11 @@ public class TextImplForFM extends TextImpl implements IAdaptable, IImplForFM {
 		return Platform.getAdapterManager().getAdapter(this, adapter);
 	}
 
-	public IModelElement getModelElement() {
+	/*public IModelElement getModelElement() {
 		return modelElement;
 	}
 
 	public void setModelElement(IModelElement modelElement) {
 		this.modelElement = modelElement;
-	}
+	}*/
 }

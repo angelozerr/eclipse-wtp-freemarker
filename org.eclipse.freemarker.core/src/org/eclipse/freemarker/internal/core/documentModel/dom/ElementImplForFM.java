@@ -14,7 +14,7 @@ package org.eclipse.freemarker.internal.core.documentModel.dom;
 
 import org.eclipse.core.runtime.IAdaptable;
 import org.eclipse.core.runtime.Platform;
-import org.eclipse.dltk.core.IModelElement;
+//import org.eclipse.dltk.core.IModelElement;
 import org.eclipse.freemarker.internal.core.documentModel.parser.FMRegionContext;
 import org.eclipse.wst.html.core.internal.document.ElementStyleImpl;
 import org.eclipse.wst.sse.core.internal.provisional.INodeAdapter;
@@ -33,7 +33,7 @@ public class ElementImplForFM extends ElementStyleImpl implements IAdaptable,
 		IImplForFM {
 
 	private static final String WORKBENCH_ADAPTER = "org.eclipse.ui.model.IWorkbenchAdapter"; //$NON-NLS-1$
-	private IModelElement modelElement;
+	//private IModelElement modelElement;
 
 	public ElementImplForFM() {
 		super();
@@ -109,13 +109,13 @@ public class ElementImplForFM extends ElementStyleImpl implements IAdaptable,
 		return prefix;
 	}
 
-	public IModelElement getModelElement() {
+	/*public IModelElement getModelElement() {
 		return modelElement;
 	}
 
 	public void setModelElement(IModelElement modelElement) {
 		this.modelElement = modelElement;
-	}
+	}*/
 
 	@Override
 	public boolean isStartTagClosed() {
